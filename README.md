@@ -1,6 +1,8 @@
 # Fomotoken-BSC-Scrapper
 A tool can scrape Fomotoken BSC New Token then send to telegram
 
+![image](https://user-images.githubusercontent.com/73378179/145968464-1edc545a-e963-476a-8197-89c0e18d45db.png)
+
 # Usage:
 
     1. Install Python 3.9
