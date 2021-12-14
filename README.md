@@ -16,7 +16,9 @@ A tool can scrape Fomotoken BSC New Token then send to telegram
     
 # Config.py
 
-token_bot: read the docs https://sendpulse.com/knowledge-base/chatbot/create-telegram-chatbot
+token_bot: read the docs https://sendpulse.com/knowledge-base/chatbot/create-telegram-chatbot 
+
+add the bot to the group/channel
 
 username_target: use username channel/grup for public, for private you can use chat id like below:
 
