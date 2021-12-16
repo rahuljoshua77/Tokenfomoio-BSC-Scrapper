@@ -50,14 +50,16 @@ while True:
         name_token = stud_obj["BSC"][0][2]
         simbol = stud_obj["BSC"][0][3]
         date = dt_object
-        telegram_grup = 't.me/'+name_token.replace(" ", "")
+        telegram_grup1 = 't.me/'+name_token.replace(" ", "")
+        telegram_grup2 = 't.me/'+name_token.replace(" ", "")+"Bsc"
+        telegram_grup3 = 't.me/'+name_token.replace(" ", "")+"Token"
         print(f"[{time.strftime('%d-%m-%y %X')}] {address} | {name_token} | {simbol} | {date}")
         container.append(stud_obj["BSC"][0][1])
         requests.post(
         url='https://api.telegram.org/bot{0}/{1}'.format(token_telegram, "sendMessage"),
         data={
           'chat_id': target_telegram, 
-          'text': f'New Token!\nAddress: {address}\nName Token: {name_token}\nSymbol: {simbol}\nTelegram Group: {telegram_grup}\nDate: {date}'}
+          'text': f'New Token!\nAddress: {address}\nName Token: {name_token}\nSymbol: {simbol}\nTelegram Group:\n+ {telegram_grup1}\n+ {telegram_grup2}\n+ {telegram_grup3}\nDate: {date}'}
         ).json()
     
     else:
