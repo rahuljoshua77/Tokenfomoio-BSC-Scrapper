@@ -13,10 +13,10 @@ s = Session()
 from requests.structures import CaseInsensitiveDict
 
 url = "https://tokenfomo.io/api/tokens/bsc?limit=1"
-
+token_api = "YOUR TOKEN HERE"
 header = CaseInsensitiveDict()
 header["Accept"] = "application/json"
-header["Authorization"] = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGFydWwyMTkxNDU2NCIsImlhdCI6MTYzOTkxNDAyOSwiZXhwIjoxNjQwNTE4ODI5fQ.oCuHCuVynfFtrFljtbIpr5yOEIMQvlhBILARYq7sUiA"
+header["Authorization"] = f"Bearer {token_api}"
 s.headers.update(header) 
 
 container = []
