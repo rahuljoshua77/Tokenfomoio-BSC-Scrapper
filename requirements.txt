@@ -1,4 +1,4 @@
-undetected-chromedriver
-selenium
 requests
 bs4
+datetime
+json
